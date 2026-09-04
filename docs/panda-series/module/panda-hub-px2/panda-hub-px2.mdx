@@ -1,0 +1,111 @@
+---
+sidebar_position: 1
+description: Panda Hub PX2 是一款适用于 Bambu Lab P2S/X2D 打印机的紧凑型供电扩展模块，可为打印机腔体内的配件提供额外供电接口。
+---
+
+# Panda Hub PX2
+
+<div class="div-table">
+
+{/* main image */}
+
+<ImageView src={require("./img/panda-hub-px2-title.webp").default} width="45%" class="right-image" />
+
+## 产品简介
+
+BIGTREETECH Panda Hub PX2 是一款紧凑型供电扩展模块，可在打印机腔体内为配件提供额外的供电接口。本产品适用于 Bambu Lab P2S 和 X2D 打印机，可配合打印安装座与随附紧固件安装，固定并保护打印机原有的 USB 连接，减少振动和磨损。
+
+## 技术规格
+
+| 产品参数       | Panda Hub PX2                         |
+| -------------- | ------------------------------------- |
+| 供电输出接口   | 2 x USB Type-A; 2 x 24V XH2.54      |
+| 5V 输出总电流 | 不得超过 1.4A                        |
+| 24V 输出总电流 | 不得超过 1A                          |
+| USB 数据通信   | 不支持，仅用于供电                    |
+
+</div>
+
+## 产品特点
+
+- 结构紧凑，便于集成到打印机腔体内部。
+- 提供 2 个 USB Type-A 接口和 2 个 24 V XH2.54 接口。
+- 适用于 P2S 和 X2D 的打印安装座可配合随附紧固件固定 Panda Hub PX2，并减少 USB 连接受到的振动和磨损。
+
+## 注意事项
+
+:::warning[输出限制]
+
+- 5 V 输出总电流不得超过 1.4 A。
+- 24 V 输出总电流不得超过 1 A。
+- Panda Hub PX2 仅用于供电，不支持标准 USB 数据通信。
+
+:::
+
+## 相关链接
+
+- [GitHub Repository](https://github.com/bigtreetech/Panda-Hub-PX2)
+
+## 安装教程
+
+:::danger[安全提示]
+
+拆卸盖板或断开内部线缆前，请关闭打印机并断开市电电源。操作原厂线缆和连接器时请勿用力拉扯。
+
+:::
+
+### 准备打印安装座
+
+下载并打印 [Panda Hub PX2 mount.STL](https://github.com/bigtreetech/Panda-Hub-PX2/tree/master/3D%20model/Printed%20Parts)。
+
+建议使用 ABS 或 PETG 打印。
+
+### 安装 Panda Hub PX2 供电模块
+
+使用随附的 M3 自攻螺钉将模块固定到打印安装座上。
+
+<ImageView src={require("./img/hub-module-components.webp").default} width="45%" />
+
+<ImageView src={require("./img/hub-module-mounted.webp").default} width="45%" />
+
+### 安装 Panda Hub PX2
+
+将 Panda Hub PX2 卡入打印机前框架上方的安装槽。
+
+<ImageView src={require("./img/hub-installed.webp").default} width="45%" />
+
+### 打开打印机左侧盖板
+
+小心打开盖板并拉出图示连接器。请勿用力拉扯，以免损坏原厂线缆。
+
+<ImageView src={require("./img/side-cover-connector.webp").default} width="45%" />
+
+### 断开最内侧的连接器
+
+断开图中所示的连接器。
+
+<ImageView src={require("./img/inner-connector-location.webp").default} width="45%" />
+
+### 将原厂插头连接到 Y 型分线器
+
+将从打印机上拔下的插头连接到随附 Y 型分线器的白色插座。
+
+<ImageView src={require("./img/y-splitter-factory-plug.webp").default} width="45%" />
+
+### 将 Y 型分线器连接到打印机主板
+
+将黑色插头插入打印机主板，按图示重新连接原厂线缆，然后合上侧盖板。
+
+<ImageView src={require("./img/y-splitter-mainboard.webp").default} width="45%" />
+
+### 整理并固定线缆
+
+按图示整理并固定线缆，确保线缆不会干涉任何运动部件。
+
+<ImageView src={require("./img/installation-complete.webp").default} width="45%" />
+
+:::info[安装检查]
+
+恢复供电前，请确认所有连接器均已插接到位，并确认线束不会进入打印头的运动区域。
+
+:::
